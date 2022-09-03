@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cell img {
+  width: 48px;
+  height: 48px;
+  cursor: grab;
+}
+.cell.selected {
+  background-color: brown;
+}
+
+.black {
+  background-color: deepskyblue;
+}
+
+.white {
+  background-color: rgb(182, 182, 182);
+}
+
+.available {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #6ca52ab7;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
